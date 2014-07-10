@@ -98,6 +98,12 @@ ja:
       spree/state:
         abbr: 略語
         name: 名称
+      spree/store:
+        url: サイトURL
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        seo_title: Seo Title
+        name: Site名
       spree/tax_category:
         description: 説明
         name: 名称
@@ -132,7 +138,7 @@ ja:
         spree/credit_card:
           attributes:
             base:
-              card_expired: 
+              card_expired: カードの有効期限が切れています
     models:
       spree/address:
         one: 住所
@@ -155,11 +161,11 @@ ja:
       spree/payment:
         one: 支払い
         other: 支払い
-      spree/payment_method: 
+      spree/payment_method: 支払い方法
       spree/product:
         one: 商品
         other: 商品
-      spree/promotion: 
+      spree/promotion: プロモーション
       spree/property:
         one: 属性
         other: 属性
@@ -182,7 +188,7 @@ ja:
       spree/state:
         one: 都道府県（州）
         other: 都道府県（州）
-      spree/stock_location: 
+      spree/stock_location: エリア別在庫
       spree/stock_transfer: 
       spree/tax_category:
         one: 税区分
@@ -215,7 +221,7 @@ ja:
       invalid: Eメールアドレスもしくはパスワードが異なります。
       invalid_token: 無効な認証トークン。
       locked: アカウントはロックされています
-      timeout: 
+      timeout: タイムアウトしました
       unauthenticated: 続ける前にサインインかサインアップが必要です。
       unconfirmed: 続ける前にアカウントの確認が必要です。
     mailer:
@@ -257,7 +263,7 @@ ja:
     action: アクション
     actions:
       cancel: キャンセル
-      continue: 
+      continue:
       create: 作成
       destroy: 削除
       edit: 編集
@@ -280,7 +286,7 @@ ja:
     add_rule_of_type: 次のタイプのルールを追加する
     add_state: 都道府県（州）の追加
     add_stock: ストック追加
-    add_stock_management: 
+    add_stock_management: 新規在庫管理
     add_to_cart: カートに追加
     add_variant: 
     additional_item: 2品目からの値段増加
@@ -300,13 +306,13 @@ ja:
           delivery_success: テストメールが正しく送信されました。
           error: ! 'テストメールエラー: %{e}'
       tab:
-        configuration: 
-        orders: 
+        configuration: 設定
+        orders: 注文管理
         overview: 
-        products: 
-        promotions: 
-        reports: 
-        users: 
+        products: 商品管理
+        promotions: プロモーション
+        reports: レポート
+        users: ユーザー管理
     administration: 管理
     agree_to_privacy_policy: 
     agree_to_terms_of_service: 
@@ -355,7 +361,7 @@ ja:
     back_to_shipping_categories: 配送カテゴリー一覧に戻る
     back_to_shipping_methods_list: 配送方法一覧に戻る
     back_to_states_list: 都道府県（州）一覧に戻る
-    back_to_stock_locations_list: 
+    back_to_stock_locations_list: エリア別在庫一覧に戻る
     back_to_stock_movements_list: 
     back_to_stock_transfers_list: 
     back_to_store: ショップに戻る
@@ -364,8 +370,9 @@ ja:
     back_to_trackers_list: トラッカー一覧に戻る
     back_to_users_list: ユーザー一覧に戻る
     back_to_zones_list: ゾーン一覧に戻る
-    backorderable: 
-    backorders_allowed: 
+    backorderable: 在庫切れ
+    backorderable_default: デフォルトで在庫切れ
+    backorders_allowed: 取り寄せ注文を許可
     balance_due: 未払額
     bill_address: 請求先住所
     billing: 決済
@@ -409,17 +416,17 @@ ja:
     cost_price: 原価
     could_not_connect_to_jirafe: 
     could_not_create_stock_movement: 
-    count_on_hand: 
+    count_on_hand: 現在の在庫数
     countries: 国
     country: 国
     country_based: 国による区別
-    country_name: 
+    country_name: 国名
     coupon: クーポン
     coupon_code: クーポンコード
     coupon_code_already_applied: 
     coupon_code_applied: クーポンコードが適応されました。
     coupon_code_better_exists: 
-    coupon_code_expired: 
+    coupon_code_expired: クーポンの有効期限が切れています。
     coupon_code_max_usage: 
     coupon_code_not_eligible: 
     coupon_code_not_found: 
@@ -431,10 +438,10 @@ ja:
     credit_cards: クレジットカード
     credit_owed: 過払い額
     currency: 通貨
-    currency_decimal_mark: 
+    currency_decimal_mark: 金額の小数点記号
     currency_settings: 通貨の設定
     currency_symbol_position: 通貨のマークを前もしくは後ろにつけますか？
-    currency_thousands_separator: 
+    currency_thousands_separator: 金額の区切り文字
     current: 現在
     current_promotion_usage: 
     customer: お客様
@@ -485,7 +492,7 @@ ja:
     editing_shipping_category: 配送カテゴリー編集
     editing_shipping_method: 配送方法編集
     editing_state: 都道府県（州）編集
-    editing_stock_location: 
+    editing_stock_location: エリア別在庫編集
     editing_stock_movement: 
     editing_tax_category: 税金カテゴリー編集
     editing_tax_rate: 税率の編集
@@ -554,7 +561,7 @@ ja:
     hide_cents: セントの非表示
     home: ホーム
     i18n:
-      available_locales: 
+      available_locales: 使用可能な言語
       fields: 
       language: 
       localization_settings: 
@@ -562,9 +569,9 @@ ja:
       only_incomplete: 
       select_locale: 
       show_only: 
-      supported_locales: 
+      supported_locales: サポートしている言語
       this_file_language: 日本語 (ja-JP)
-      translations: 翻訳 
+      translations: 翻訳
     icon: アイコン
     image: 画像
     image_settings: 画像設定
@@ -577,7 +584,7 @@ ja:
     insufficient_stock: 在庫が十分ではありません。残り%{on_hand}個です。
     intercept_email_address: 置き換え用のメールアドレス
     intercept_email_instructions: メールの宛先をこのアドレスで置き換えます。
-    internal_name: 
+    internal_name: 管理名称
     invalid_payment_provider: 
     invalid_promotion_action: 
     invalid_promotion_rule: 
@@ -591,9 +598,9 @@ ja:
     item_total: 合計
     item_total_rule:
       operators:
-        gt: greater than
-        gte: greater than or equal to
-    items_cannot_be_shipped: 
+        gt: より多い
+        gte: 以上
+    items_cannot_be_shipped: 商品の配送を行えません。
     jirafe: 
     landing_page_rule:
       path: パス
@@ -609,8 +616,8 @@ ja:
     listing_users: ユーザー一覧
     loading: 読み込み中
     locale_changed: ロケールを変更しました
-    location: 
-    lock: 
+    location: ロケーション
+    lock: ロック
     logged_in_as: ログイン
     logged_in_succesfully: ログインに成功しました
     logged_out: ログアウトしました。
@@ -635,7 +642,7 @@ ja:
     minimal_amount: 最低額
     month: 月
     more: さらに
-    move_stock_between_locations: 
+    move_stock_between_locations: 在庫を移動しました
     my_account: アカウント情報
     my_orders: 注文情報
     name: 名称
@@ -657,7 +664,7 @@ ja:
     new_shipping_category: 新規配送カテゴリー
     new_shipping_method: 新規配送方法
     new_state: 新規都道府県（州）
-    new_stock_location: 
+    new_stock_location: 新規エリア別在庫
     new_stock_movement: 
     new_stock_transfer: 
     new_tax_category: 新規税金カテゴリー
@@ -671,11 +678,11 @@ ja:
     next: 次へ
     no_actions_added: 
     no_orders_found: 
-    no_payment_methods_found: 
+    no_payment_methods_found: 支払い方法が見つかりませんでした。
     no_pending_payments: 
-    no_products_found: 商品が見付かりませんでした。
+    no_products_found: 商品が見つかりませんでした。
     no_promotions_found: プロモーションが見つかりませんでした。
-    no_resource_found: 
+    no_resource_found: データが一件もありません
     no_results: 検索結果がありませんでした。
     no_rules_added: ルールが追加されていません
     no_shipping_methods_found: 
@@ -718,16 +725,16 @@ ja:
         instructions: Your order has been CANCELED.  Please retain this cancellation information for your records.
         order_summary_canceled: Order Summary [CANCELED]
         subject: 注文のキャンセル
-        subtotal: 
-        total: 
+        subtotal: 小計
+        total: 合計
       confirm_email:
         dear_customer: Dear Customer,
         instructions: Please review and retain the following order information for your records.
         order_summary: Order Summary
         subject: 注文確認
-        subtotal: 
+        subtotal: 小計
         thanks: Thank you for your business.
-        total: 
+        total: 合計
     order_not_found: 
     order_number: 注文
     order_populator:
@@ -782,13 +789,13 @@ ja:
       void: 無効
     payment_updated: 支払いが更新されました。
     payments: 支払い方法
-    percent: 
-    percent_per_item: Percent Per Item
+    percent: ％
+    percent_per_item: 商品ごとに定率
     permalink: パーマリンク
     phone: 電話番号
     place_order: 注文を送信する
     please_define_payment_methods: まず支払い方法を定義してください。
-    populate_get_error: Something went wrong. Please try adding the item again.
+    populate_get_error: 操作を完了できませんでした。お手数ですが、もう一度やり直して下さい。
     powered_by: Powered by
     presentation: 表示名
     previous: 前へ
@@ -940,9 +947,9 @@ ja:
     shipping_address: 配送先
     shipping_categories: 配送カテゴリー
     shipping_category: 配送カテゴリー
-    shipping_flat_rate_per_item: 
-    shipping_flat_rate_per_order: 
-    shipping_flexible_rate: 
+    shipping_flat_rate_per_item: 商品ごとに一定
+    shipping_flat_rate_per_order: 注文ごとに一定
+    shipping_flexible_rate: 一定
     shipping_instructions: 配送に関して
     shipping_method: 配送方法
     shipping_methods: 配送方法
@@ -979,11 +986,11 @@ ja:
     states: 都道府県（州）
     states_required: 必須
     status: 状況
-    stock_location: 
-    stock_location_info: 
-    stock_locations: 
-    stock_management: 
-    stock_management_requires_a_stock_location: 
+    stock_location: エリア別在庫
+    stock_location_info: エリア別在庫情報
+    stock_locations: エリア別在庫
+    stock_management: 在庫管理
+    stock_management_requires_a_stock_location: まずはエリア別在庫を作成して下さい。
     stock_movements: 
     stock_movements_for_stock_location: 
     stock_successfully_transferred: 
@@ -1030,9 +1037,9 @@ ja:
     to_add_variants_you_must_first_define: 種類を追加するには、まずそれを定義する必要があります。
     total: 合計
     tracking: トラッキング
-    tracking_number: 
-    tracking_url: 
-    tracking_url_placeholder: 
+    tracking_number: トラッキングナンバー
+    tracking_url: トラッキングURL
+    tracking_url_placeholder: ex) http://jizen.kuronekoyamato.co.jp/jizen/servlet/crjz.b.NQ0010?id=:tracking
     transfer_from_location: 
     transfer_stock: 
     transfer_to_location: 
@@ -1043,7 +1050,7 @@ ja:
     under_price: ! '%{price}より安い'
     unlock: 
     unrecognized_card_type: 認識できないカードタイプ
-    unshippable_items: 
+    unshippable_items: お届けできない商品
     update: 更新
     updating: 更新中
     usage_limit: 使用制限
@@ -1074,8 +1081,8 @@ ja:
     year: 年
     you_have_no_orders_yet: まだ注文がありません。
     your_cart_is_empty: カートは空です
-    your_order_is_empty_add_product: 
+    your_order_is_empty_add_product: 注文情報はありません。商品を追加してください。
     zip: 郵便番号
-    zipcode: 
+    zipcode: 郵便番号
     zone: ゾーン
     zones: ゾーン
